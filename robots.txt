@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Bloqueia arquivos internos / dev
+Disallow: /*.docx$
+Disallow: /*.jsx$
+Disallow: /calc.txt
+Disallow: /form.txt
+
+# Sitemap
+Sitemap: https://franquiadepilates.com.br/sitemap.xml

@@ -1,0 +1,115 @@
+# ===========================================================
+# VOLL Pilates Studios — Franquia
+# .htaccess para CyberPanel (OpenLiteSpeed / LiteSpeed Enterprise)
+# Site estático — HTML + assets
+# ===========================================================
+
+# --- Segurança básica ---
+Options -Indexes
+ServerSignature Off
+
+<Files ".htaccess">
+  Require all denied
+</Files>
+<Files ".git*">
+  Require all denied
+</Files>
+<FilesMatch "\.(docx|jsx|md|log)$">
+  Require all denied
+</FilesMatch>
+
+# --- HTTPS + apex (sem www) ---
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Força HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Remove www
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# --- LiteSpeed Cache (LSCache) — funciona no OpenLiteSpeed/LSWS do CyberPanel ---
+<IfModule LiteSpeed>
+  CacheLookup on
+
+  # Cache padrão: HTML por 1h
+  RewriteEngine On
+  RewriteRule .* - [E=Cache-Control:max-age=3600]
+
+  # Assets estáticos: 1 ano com "immutable"
+  <FilesMatch "\.(webp|avif|png|jpe?g|gif|svg|ico|css|js|woff2?|ttf|otf|eot|mp4|webm|pdf)$">
+    RewriteRule .* - [E=Cache-Control:max-age=31536000]
+  </FilesMatch>
+
+  # Não fazer cache de formulários e endpoints dinâmicos, se existirem
+  RewriteCond %{REQUEST_URI} ^/(admin|login|api)/
+  RewriteRule .* - [E=Cache-Control:no-cache]
+</IfModule>
+
+# --- Compressão Gzip/Brotli (LiteSpeed comprime auto; mantém fallback) ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/ttf font/otf font/woff font/woff2
+</IfModule>
+
+# --- Cache de browser (fallback + reforço) ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                        "access plus 1 month"
+
+  ExpiresByType text/html               "access plus 1 hour"
+
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/avif              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/gif               "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType image/x-icon            "access plus 1 year"
+
+  ExpiresByType video/mp4               "access plus 1 year"
+  ExpiresByType video/webm              "access plus 1 year"
+
+  ExpiresByType text/css                "access plus 1 year"
+  ExpiresByType text/javascript         "access plus 1 year"
+  ExpiresByType application/javascript  "access plus 1 year"
+
+  ExpiresByType font/woff               "access plus 1 year"
+  ExpiresByType font/woff2              "access plus 1 year"
+  ExpiresByType application/font-woff2  "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Cache-Control forte pros assets
+  <FilesMatch "\.(webp|avif|png|jpe?g|gif|svg|ico|css|js|woff2?|mp4|webm)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+
+  # Headers de segurança
+  Header always set X-Content-Type-Options       "nosniff"
+  Header always set X-Frame-Options              "SAMEORIGIN"
+  Header always set Referrer-Policy              "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy           "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+  Header always set Strict-Transport-Security    "max-age=31536000; includeSubDomains" env=HTTPS
+
+  # Remove header do servidor
+  Header unset X-Powered-By
+</IfModule>
+
+# --- MIME types (garantir WebP/AVIF/WOFF2) ---
+<IfModule mod_mime.c>
+  AddType image/webp                 .webp
+  AddType image/avif                 .avif
+  AddType font/woff2                 .woff2
+  AddType application/manifest+json  .webmanifest
+</IfModule>
+
+# --- Página 404 → volta pro index (site tem uma página só) ---
+ErrorDocument 404 /index.html

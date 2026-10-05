@@ -1,0 +1,11 @@
+# Assets/source files not used by the published static page
+design-canvas.jsx
+tweaks-panel.jsx
+video/frames/
+video/videook.mp4
+video/videook_old.mp4
+images/fachada.png
+images/fachadaok.png
+images/interno1.png
+images/interno2.png
+images/recepcao.png
