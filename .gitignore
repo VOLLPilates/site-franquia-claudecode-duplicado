@@ -18,3 +18,7 @@ node_modules/
 
 .vercel
 .env*.local
+
+# Material interno e fotos originais (o repositório é público; só as versões .webp são versionadas)
+modificações/
+images/studios/**/*.jpg
