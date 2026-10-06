@@ -65,7 +65,7 @@
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://franquiadepilates.com.br/"/>
   <meta property="og:title" content="VOLL Pilates Studios — Franquia"/>
-  <meta property="og:description" content="Seja franqueado da maior rede de Pilates da América do Sul. Modelo validado com +250 unidades, suporte completo e payback em 8-12 meses."/>
+  <meta property="og:description" content="Seja franqueado da maior rede de Pilates da América do Sul. Modelo validado com +230 unidades, suporte completo e payback em 10 a 18 meses."/>
   <meta property="og:image" content="https://franquiadepilates.com.br/images/interno1.webp"/>
   <meta property="og:locale" content="pt_BR"/>
   <meta name="twitter:card" content="summary_large_image"/>
@@ -80,7 +80,7 @@
         "name": "VOLL Pilates Studios",
         "url": "https://franquiadepilates.com.br/",
         "logo": "https://franquiadepilates.com.br/images/logo-voll-colorido-negativo.webp",
-        "description": "Maior rede de Pilates da América do Sul, com +250 unidades comercializadas em 115 cidades brasileiras. Associada à ABF.",
+        "description": "Maior rede de Pilates da América do Sul, com +230 unidades comercializadas em 115 cidades brasileiras. Associada à ABF.",
         "foundingDate": "2010",
         "areaServed": "BR",
         "memberOf": {
@@ -107,7 +107,7 @@
         "name": "Franquia VOLL Pilates Studios",
         "provider": { "@id": "https://franquiadepilates.com.br/#organization" },
         "areaServed": "BR",
-        "description": "Modelo de franquia validado com +250 unidades. Investimento inicial a partir de R$ 80.000, payback médio de 8 a 12 meses, faturamento até R$ 38 mil/mês, espaço mínimo de 40 m². Não exige formação em fisioterapia ou educação física.",
+        "description": "Modelo de franquia validado com +230 unidades. Investimento inicial a partir de R$ 80.000, payback médio de 10 a 18 meses, faturamento até R$ 38 mil/mês, espaço mínimo de 40 m². Não exige formação em fisioterapia ou educação física.",
         "offers": {
           "@type": "Offer",
           "price": "80000",
@@ -144,7 +144,7 @@
             "name": "Qual o tempo médio de retorno (payback)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "O payback médio é de 8 a 12 meses, com breakeven em 2 a 4 meses, considerando a operação estabilizada da unidade."
+              "text": "O payback médio é de 10 a 18 meses, com breakeven em até 6 meses, considerando a operação estabilizada da unidade."
             }
           },
           {
@@ -175,8 +175,6 @@
   <link rel="dns-prefetch" href="https://d335luupugsy2.cloudfront.net"/>
   <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
   <link rel="dns-prefetch" href="https://connect.facebook.net"/>
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/>
-  <link rel="dns-prefetch" href="https://iavoll.exerciciosdepilates.com.br"/>
   <link rel="preload" as="image" href="images/interno1-mobile.webp" type="image/webp" media="(max-width: 767px)" fetchpriority="high"/>
   <link rel="preload" as="image" href="images/interno1.webp" type="image/webp" media="(min-width: 768px)" fetchpriority="high"/>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap"/>
@@ -301,6 +299,7 @@
     .hero-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; font-size: 14px; color: rgba(255,255,255,0.88); }
     .hero-chips span { display: inline-flex; align-items: center; gap: 8px; }
     .hero-chips svg { width: 16px; height: 16px; color: var(--green-on-dark); flex: none; }
+    .hero-mini-stat .hero-abf { width: 28px; height: 28px; display: block; }
     .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; justify-content: center; }
     .hero-actions .btn-primary { border-radius: 999px; padding: 18px 40px; font-size: 13px; }
     .hero-actions .btn-outline {
@@ -381,7 +380,8 @@
     .solidez-ico { width: 68px; height: 68px; border-radius: 50%; background: #eef2ef; display: flex; align-items: center; justify-content: center; color: var(--green-cta); }
     .solidez-ico svg { width: 30px; height: 30px; }
     .solidez-val { font-family: var(--serif); font-size: 38px; font-weight: 700; color: var(--green-cta); line-height: 1; }
-    .solidez-lbl { font-size: 14px; color: var(--muted); line-height: 1.4; text-align: center; max-width: 140px; }
+    .solidez-lbl { font-size: 14px; color: var(--muted); line-height: 1.4; text-align: center; max-width: 190px; }
+    .solidez-apoio { font-size: 16px; color: var(--muted); line-height: 1.6; max-width: 640px; margin: -16px auto 32px; }
     .solidez-divider { max-width: 1280px; margin: 0 auto; border-top: 1px solid rgba(76,51,41,0.12); padding-top: 56px; }
     .solidez-eco-title { font-size: 14px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--dark); margin-bottom: 32px; }
     .solidez-eco { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 48px; }
@@ -431,7 +431,7 @@
     .market-grid-old { display: none; }
 
     /* ── MODELO ── */
-    #modelo { padding: 120px 64px; background: #fff; text-align: center; }
+    #modelo { padding: 120px 64px; background: linear-gradient(180deg,#3a1d13 0%, #4c3329 100%); text-align: center; }
     .modelo-intro { max-width: 900px; margin: 0 auto 56px; }
     .modelo-intro .section-label { justify-content: center; }
     .modelo-intro .section-headline { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 44px); font-weight: 700; color: var(--dark); line-height: 1.15; }
@@ -509,15 +509,6 @@
     .royalties-bar-left b { display: block; font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
     .royalties-bar-left span { font-size: 14px; color: var(--muted); }
     .royalties-bar-right { color: var(--green-cta); font-size: 14px; font-weight: 600; white-space: nowrap; }
-    .desconto-card { max-width: 1280px; margin: 40px auto 0; background: linear-gradient(180deg,#4c3329 0%, #3a251b 100%); border-radius: 20px; padding: 56px 48px 48px; position: relative; text-align: center; color: #fff; }
-    .desconto-badge { position: absolute; top: 24px; right: 32px; padding: 8px 20px; border-radius: 999px; background: #d9a992; color: #2f170f; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
-    .desconto-card h3 { font-family: var(--sans); font-size: clamp(22px, 2.2vw, 28px); font-weight: 700; color: #fff; margin-bottom: 12px; }
-    .desconto-card .desconto-sub { font-size: 15px; color: rgba(255,255,255,0.75); margin-bottom: 32px; }
-    .desconto-headline { font-family: var(--serif); font-size: clamp(40px, 5.4vw, 68px); font-weight: 700; color: var(--green-on-dark); line-height: 1.05; margin-bottom: 28px; }
-    .desconto-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 36px; }
-    .desconto-chip { padding: 10px 20px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.10); color: rgba(255,255,255,0.85); font-size: 13px; }
-    .desconto-cta { display: inline-flex; align-items: center; padding: 18px 44px; border-radius: 999px; background: var(--green-cta); color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.2s; }
-    .desconto-cta:hover { background: #244635; transform: translateY(-1px); }
     .jornada-header { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; margin-bottom: 72px; }
     .steps { display: grid; grid-template-columns: repeat(5,1fr); position: relative; }
     .steps::before { content: ''; position: absolute; top: 24px; left: 10%; right: 10%; height: 1px; background: rgba(49,93,73,0.48); z-index: 0; }
@@ -546,7 +537,8 @@
       box-sizing: border-box;
     }
     .tgrid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
-    .tcard { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 36px 30px; text-align: left; }
+    .tgrid-2 { grid-template-columns: repeat(2,1fr); max-width: 860px; margin: 0 auto; }
+    .tcard { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 36px 30px; text-align: left; display: flex; flex-direction: column; }
     .tbullets {
       display: flex; justify-content: center; align-items: center; gap: 10px;
       margin-top: 32px;
@@ -568,12 +560,70 @@
       background: var(--green-on-dark);
       transform: scale(1.2);
     }
-    .tquote { font-family: var(--serif); font-size: 19px; font-style: italic; font-weight: 400; color: #fff8ed; line-height: 1.65; margin-bottom: 28px; }
-    .tquote::before { content: '"'; font-size: 52px; color: var(--green-on-dark); line-height: 0; vertical-align: -18px; margin-right: 2px; }
-    .tauthor { display: flex; align-items: center; gap: 12px; }
-    .tavatar { width: 40px; height: 40px; background: var(--menta); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 16px; font-weight: 700; color: var(--black); flex-shrink: 0; }
+    .tquote { font-family: var(--serif); font-size: 15px; font-style: italic; font-weight: 400; color: #fff8ed; line-height: 1.6; margin-bottom: 28px; }
+    .tquote p + p { margin-top: 12px; }
+    .tquote p:first-child::before { content: '"'; font-size: 52px; color: var(--green-on-dark); line-height: 0; vertical-align: -18px; margin-right: 2px; }
+    .tauthor { display: flex; align-items: center; gap: 14px; margin-top: auto; }
+    .tavatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; background: var(--menta); border: 2px solid rgba(255,255,255,0.18); flex-shrink: 0; display: block; }
     .tname { font-size: 13px; font-weight: 600; color: white; }
     .trole { font-size: 12px; color: var(--dark-soft); margin-top: 2px; }
+
+    /* ── GALERIA DE STUDIOS ── */
+    #galeria { padding: 120px 64px; background: #fff; text-align: center; }
+    .gal-head { max-width: 800px; margin: 0 auto 56px; }
+    .gal-head h2 { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 44px); font-weight: 700; color: var(--black); line-height: 1.15; }
+    .gal-head p { font-size: 17px; color: var(--muted); line-height: 1.6; margin-top: 18px; }
+    .gal-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; max-width: 1280px; margin: 0 auto; }
+    .gal-card { flex: 0 1 calc((100% - 48px) / 3); min-width: 0; }
+    .gal-view { position: relative; border-radius: 18px; overflow: hidden; background: var(--cream-deep); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .gal-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .gal-track::-webkit-scrollbar { display: none; }
+    .gal-track img { flex: 0 0 100%; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; scroll-snap-align: start; display: block; }
+    .gal-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer; background: rgba(47,23,15,0.62); color: #fff; font-size: 24px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    .gal-nav:hover { background: rgba(47,23,15,0.88); }
+    .gal-prev { left: 10px; }
+    .gal-next { right: 10px; }
+    .gal-card figcaption { margin-top: 14px; font-size: 15px; font-weight: 700; color: var(--black); line-height: 1.35; }
+    @media (prefers-reduced-motion: reduce) { .gal-track { scroll-behavior: auto; } }
+
+    /* ── BOTÃO FLUTUANTE WHATSAPP ── */
+    .wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 300; width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 20px rgba(0,0,0,0.28); transition: transform 0.2s, background 0.2s; }
+    .wa-float:hover { background: #1ebe5b; transform: translateY(-2px); }
+    .wa-float svg { width: 32px; height: 32px; }
+
+    /* ── SEÇÕES DO COPY (suporte, receitas, números, jornada) ── */
+    .sec-head { max-width: 860px; margin: 0 auto 56px; text-align: center; }
+    .sec-head h2 { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 44px); font-weight: 700; color: var(--black); line-height: 1.15; }
+    .sec-head h2 em { font-style: normal; color: var(--green-cta); }
+    .sec-head p { font-size: 17px; color: var(--muted); line-height: 1.6; margin-top: 18px; }
+    .sec-cta-wrap { text-align: center; margin-top: 48px; }
+    #modelo .sec-head h2 { color: #fff; }
+    #modelo .sec-head h2 em { color: var(--green-on-dark); }
+    #modelo .sec-head p { color: rgba(255,255,255,0.78); }
+    .sup-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1280px; margin: 0 auto; }
+    .sup-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10); border-radius: 20px; padding: 32px 28px; text-align: left; }
+    .sup-card h3 { font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--green-on-dark); margin-bottom: 16px; }
+    .sup-card ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .sup-card li { font-size: 14.5px; color: rgba(255,255,255,0.86); line-height: 1.5; padding-left: 18px; position: relative; }
+    .sup-card li::before { content: '•'; position: absolute; left: 0; color: var(--green-on-dark); }
+    .clara-card { max-width: 1280px; margin: 20px auto 0; background: rgba(162,212,191,0.10); border: 1px solid rgba(162,212,191,0.30); border-radius: 20px; padding: 26px 30px; display: flex; gap: 20px; align-items: center; text-align: left; }
+    .clara-ico { width: 52px; height: 52px; border-radius: 50%; background: var(--green-on-dark); color: var(--black); display: flex; align-items: center; justify-content: center; flex: none; }
+    .clara-ico svg { width: 26px; height: 26px; }
+    .clara-card .clara-tag { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green-on-dark); margin-bottom: 4px; }
+    .clara-card b { display: block; font-size: 18px; color: #fff; margin-bottom: 4px; }
+    .clara-card div > span:last-child { font-size: 15px; color: rgba(255,255,255,0.80); line-height: 1.5; }
+    #receitas { padding: 120px 64px; background: #f7efdc; text-align: center; }
+    .rec-grid.rec-grid-4 { grid-template-columns: repeat(4, 1fr); max-width: 1200px; }
+    .neg-grid-3 { grid-template-columns: repeat(3, 1fr); max-width: 860px; }
+    .neg-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 580px; margin: 24px auto 0; }
+    .neg-sim { max-width: 860px; margin: 56px auto 0; }
+    .neg-sim h3 { font-family: var(--sans); font-size: 20px; font-weight: 700; color: var(--black); }
+    .neg-sim > p { font-size: 15px; color: var(--muted); line-height: 1.6; margin-top: 8px; }
+    #etapas { padding: 120px 64px; background: #fff; text-align: center; }
+    .etapas-list { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1120px; margin: 0 auto; }
+    .etapa { display: flex; align-items: center; gap: 16px; background: #fff9ec; border-radius: 14px; padding: 20px 22px; text-align: left; }
+    .etapa-num { width: 44px; height: 44px; border-radius: 50%; background: var(--black); color: var(--green-on-dark); font-family: var(--serif); font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex: none; }
+    .etapa p { font-size: 15px; font-weight: 600; color: var(--black); line-height: 1.4; }
 
     /* ── CTA ── */
     /* verde sálvia escurecido: o sálvia puro só dava 2,65:1 com o texto de apoio */
@@ -605,7 +655,14 @@
     .cta-feat-ico { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.06); color: var(--green-on-dark); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .cta-feat-ico svg { width: 18px; height: 18px; }
     .cta-right { background: #fff; border-radius: 22px; padding: 0; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.25); scroll-margin-top: 132px; }
-    .cta-right iframe { display: block; width: 100%; border: 0; }
+    .cta-left .cta-micro { font-size: 13px; color: rgba(255,255,255,0.62); margin-top: 28px; }
+    /* Altura fixa que cobre o formulário inteiro (o portal não informa a própria
+       altura), com folga para mensagens de validação: sem rolagem no iframe.
+       Medido: 829px com 587px+ de largura, 901px com 360–400px, 949px com 335px,
+       1021px com 280px. */
+    .cta-right iframe { display: block; width: 100%; height: 940px; border: 0; overflow: hidden; }
+    @media (max-width: 399px) { .cta-right iframe { height: 1000px; } }
+    @media (max-width: 359px) { .cta-right iframe { height: 1070px; } }
 
     /* ── FOOTER ── */
     footer { background: var(--black); padding: 40px 64px; display: flex; align-items: center; justify-content: space-between; }
@@ -617,7 +674,8 @@
     .footer-copy { font-size: 12px; color: var(--dark-soft); }
 
     /* ── COMPARATIVO ── */
-    #comparativo { padding: 120px 64px; background: #f7efdc; text-align: center; }
+    #comparativo { padding: 120px 64px; background: #fff; text-align: center; }
+    #comparativo .rec-card { background: #fff9ec; }
     .rec-head { max-width: 900px; margin: 0 auto 56px; }
     .rec-head h2 { font-family: var(--serif); font-size: clamp(30px, 3.4vw, 44px); font-weight: 700; color: var(--dark); line-height: 1.15; }
     .rec-head p { font-size: 17px; color: var(--muted); line-height: 1.6; margin-top: 18px; }
@@ -849,8 +907,6 @@
       .neg-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
       .neg-card { padding: 24px 16px; }
       .royalties-bar { flex-direction: column; align-items: flex-start; gap: 8px; padding: 20px 22px; }
-      .desconto-card { padding: 48px 24px 36px; }
-      .desconto-badge { position: static; display: inline-block; margin-bottom: 20px; }
       .steps { grid-template-columns: 1fr; }
       .steps::before { display: none; }
       .step { align-items: flex-start; text-align: left; flex-direction: row; gap: 16px; padding: 12px 0; }
@@ -860,8 +916,23 @@
       /* testimonials */
       .tcarousel .tgrid { grid-template-columns: 1fr; }
       .tcard { padding: 32px 24px; }
-      .tquote { font-size: 17px; }
+      .tquote { font-size: 15px; }
       .trole { font-size: 12px; }
+
+      /* seções do copy */
+      #receitas, #etapas { padding: 80px 24px; }
+      .sec-head { margin-bottom: 40px; }
+      .sup-grid, .etapas-list { grid-template-columns: 1fr; gap: 14px; }
+      .rec-grid.rec-grid-4 { grid-template-columns: 1fr 1fr; }
+      .neg-grid.neg-grid-3, .neg-grid.neg-grid-2 { grid-template-columns: 1fr; max-width: 360px; }
+      .clara-card { flex-direction: column; align-items: flex-start; padding: 24px 22px; }
+      .solidez-apoio { margin-top: -8px; }
+
+      /* galeria */
+      #galeria { padding: 80px 24px; }
+      .gal-head { margin-bottom: 40px; }
+      .gal-card { flex-basis: 100%; }
+      .tgrid-2 { max-width: none; }
 
       /* nao-e */
       .naoe-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -898,6 +969,56 @@
       .footer-links a { font-size: 12px; }
       .footer-copy { font-size: 12px; }
     }
+    /* ── SEÇÕES EM VERDE CLARO (Mercado, Suporte, Depoimentos, Formulário e rodapé) ──
+       Verde claro da marca #a2d4bf com texto marrom: contraste 10,2:1.
+       O verde escuro #389b82 com texto branco daria só 3,4:1. */
+    :root { --green-light-bg: #a2d4bf; --on-green-muted: #3d2a22; --on-green-accent: #1f4d3c; }
+    #market, #modelo, #testimonials, #cta, footer { background: var(--green-light-bg); }
+
+    #market .market-head h2, #market .market-card-val { color: var(--black); }
+    #market .market-head p, #market .market-card-lbl, #market .market-sources { color: var(--on-green-muted); }
+    #market .market-card { background: rgba(255,255,255,0.45); border-color: rgba(47,23,15,0.12); }
+    #market .market-card svg { color: var(--on-green-accent); }
+    #market .market-cta { background: var(--green-cta); color: #fff; }
+    #market .market-cta:hover { background: #244635; }
+
+    #modelo .sec-head h2 { color: var(--black); }
+    #modelo .sec-head h2 em { color: var(--on-green-accent); }
+    #modelo .sec-head p { color: var(--on-green-muted); }
+    #modelo .sup-card { background: rgba(255,255,255,0.50); border-color: rgba(47,23,15,0.12); }
+    #modelo .sup-card h3, #modelo .sup-card li::before { color: var(--on-green-accent); }
+    #modelo .sup-card li { color: var(--black); }
+    #modelo .clara-card { background: #fff6e3; border-color: rgba(47,23,15,0.12); }
+    #modelo .clara-ico { background: var(--green-cta); color: #fff; }
+    #modelo .clara-card .clara-tag { color: var(--on-green-accent); }
+    #modelo .clara-card b { color: var(--black); }
+    #modelo .clara-card div > span:last-child { color: var(--on-green-muted); }
+
+    #testimonials .section-label { color: var(--on-green-accent); }
+    #testimonials .section-label::after { background: var(--on-green-accent); }
+    #testimonials .section-headline { color: var(--black); }
+    #testimonials .section-headline em { color: var(--on-green-accent); }
+    #testimonials .tcard { background: rgba(255,255,255,0.55); border-color: rgba(47,23,15,0.12); }
+    #testimonials .tquote { color: var(--black); }
+    #testimonials .tquote p:first-child::before { color: var(--on-green-accent); }
+    #testimonials .tname { color: var(--black); }
+    #testimonials .trole { color: var(--on-green-muted); }
+    #testimonials .tavatar { border-color: #fff; }
+    #testimonials .tbullet::before { background: rgba(47,23,15,0.28); }
+    #testimonials .tbullet:hover::before { background: rgba(47,23,15,0.55); }
+    #testimonials .tbullet[aria-current="true"]::before { background: var(--on-green-accent); }
+
+    #cta::before { background: radial-gradient(circle, rgba(255,255,255,0.35) 0%, transparent 70%); }
+    #cta .cta-left, #cta .cta-left h2 { color: var(--black); }
+    #cta .cta-left h2 em { color: var(--on-green-accent); }
+    #cta .cta-left p, #cta .cta-left .cta-micro { color: var(--on-green-muted); }
+    #cta .cta-badge { background: rgba(47,23,15,0.08); color: var(--black); }
+    #cta .cta-features li { color: var(--black); }
+    #cta .cta-feat-ico { background: rgba(255,255,255,0.6); color: var(--on-green-accent); }
+
+    footer .footer-links a { color: var(--black); }
+    footer .footer-links a:hover { color: var(--on-green-accent); }
+    footer .footer-copy { color: var(--on-green-muted); }
   </style>
   <template id="__bundler_thumbnail" data-bg-color="#4c3329">
     <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
@@ -945,7 +1066,7 @@
   <ul class="nav-links">
     <li><a href="#authority">A VOLL</a></li>
     <li><a href="#market">Mercado</a></li>
-    <li><a href="#modelo">Modelo</a></li>
+    <li><a href="#diferenciais">Modelo</a></li>
     <li><a href="#calculadora">ROI</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="https://volleducacaofisica.com.br/sistema/login/" target="_blank" rel="noopener noreferrer">Área do Franqueado</a></li>
@@ -960,28 +1081,28 @@
   <div class="hero-video-overlay" aria-hidden="true"></div>
 
   <div class="hero-content">
-    <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Vagas Limitadas por Região — Garanta Sua Exclusividade</span>
+    <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><polyline points="8.21 13.89 7 22 12 19 17 22 15.79 13.88"/></svg>17 anos liderando o mercado de Pilates</span>
 
     <h1>Abra Seu Próprio Studio de Pilates com <em>Suporte Completo</em></h1>
 
     <p class="hero-body">
-      Tenha seu próprio Studio com o respaldo do maior grupo de Pilates da<br> América do Sul. Modelo de negócio validado com mais de 250 unidades de<br> sucesso em 115 cidades.
+      Um modelo de franquia validado em mais de 230 unidades, com implantação guiada, gestão assistida e o respaldo do maior grupo de Pilates da América do Sul.
     </p>
 
     <div class="hero-chips">
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2"/></svg>Não exige formação na área</span>
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/></svg>Associado ABF</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Exclusividade territorial</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Implantação estruturada em 90 dias</span>
     </div>
 
     <div class="hero-actions">
-      <a href="#formulario-franquia" class="btn-primary">Quero Abrir Minha Franquia</a>
-      <a href="#modelo" class="btn-outline">Conhecer o Modelo →</a>
+      <a href="#formulario-franquia" class="btn-primary">Quero Abrir Meu Studio</a>
+      <a href="#diferenciais" class="btn-outline">Conhecer o Modelo →</a>
     </div>
 
     <div class="hero-mini-stats">
-      <div class="hero-mini-stat">Associado <b>ABF</b></div>
-      <div class="hero-mini-stat">Payback médio<b>8-12 meses</b></div>
+      <div class="hero-mini-stat">Associado <img class="hero-abf" src="images/logo-abf-hero.webp" alt="ABF" width="28" height="28"/></div>
+      <div class="hero-mini-stat">Payback médio<b>10-18 meses</b></div>
       <div class="hero-mini-stat">Faturamento até<b>R$38k/mês</b></div>
     </div>
   </div>
@@ -992,29 +1113,30 @@
 <!-- AUTHORITY -->
 <section id="authority">
   <div class="solidez-head fi">
-    <h2>Você não está comprando uma franquia, <em>está herdando uma autoridade!</em></h2>
+    <h2>17 anos construindo <em>o mercado de Pilates no Brasil</em></h2>
+    <p>O Grupo VOLL reúne o maior portfólio de produtos e serviços de Pilates do mundo. Educação, eventos, tecnologia e operação de Studios integrados em um único ecossistema, que sustenta cada unidade franqueada com conhecimento, marca e geração de demanda.</p>
   </div>
 
   <div class="solidez-stats fi d1">
     <div class="solidez-stat">
-      <div class="solidez-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></div>
-      <div class="solidez-val">16 anos</div>
-      <div class="solidez-lbl">De experiência</div>
+      <div class="solidez-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.66 3 3 6 3s6-1.34 6-3v-5"/></svg></div>
+      <div class="solidez-val">+105 mil</div>
+      <div class="solidez-lbl">Instrutores formados em cursos presenciais</div>
     </div>
     <div class="solidez-stat">
-      <div class="solidez-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h2M9 13h2M9 17h2M13 9h2M13 13h2M13 17h2"/></svg></div>
-      <div class="solidez-val">+250</div>
-      <div class="solidez-lbl">Unidades comercializadas</div>
-    </div>
-    <div class="solidez-stat">
-      <div class="solidez-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-      <div class="solidez-val">+115</div>
-      <div class="solidez-lbl">Cidades brasileiras</div>
+      <div class="solidez-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+      <div class="solidez-val">+130 mil</div>
+      <div class="solidez-lbl">Profissionais capacitados em cursos online</div>
     </div>
     <div class="solidez-stat">
       <div class="solidez-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-      <div class="solidez-val">+100 mil</div>
-      <div class="solidez-lbl">Alunos em toda a rede</div>
+      <div class="solidez-val">+20 mil</div>
+      <div class="solidez-lbl">Congressistas em eventos de Pilates</div>
+    </div>
+    <div class="solidez-stat">
+      <div class="solidez-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div class="solidez-val">115</div>
+      <div class="solidez-lbl">Cidades com Studios VOLL em operação</div>
     </div>
   </div>
 
@@ -1028,224 +1150,219 @@
       <span class="solidez-eco-pill"><b>VOLL</b>Eventos</span>
       <span class="solidez-eco-pill"><b>VOLL</b>Streaming</span>
     </div>
-    <a href="#formulario-franquia" class="solidez-cta">Quero Fazer Parte Desse Grupo</a>
+    <p class="solidez-apoio">Ao se tornar franqueado, sua unidade passa a operar conectada a todo esse ecossistema.</p>
+    <a href="#formulario-franquia" class="solidez-cta">Quero Fazer Parte do Grupo VOLL</a>
   </div>
 </section>
 
 <!-- MARKET -->
 <section id="market">
   <div class="market-head fi">
-    <h2>O Mercado Que Não Para de Crescer</h2>
-    <p>O setor de saúde, beleza e bem-estar é o 2º maior do franchising brasileiro. Pilates<br> lidera as tendências globais de fitness.</p>
+    <h2>Um setor em expansão acelerada</h2>
+    <p>Saúde, beleza e bem-estar deixaram de ser nicho e passaram a ocupar posição central no consumo e no franchising brasileiro. O Pilates lidera esse movimento, impulsionado pela demanda por atividades de baixo impacto e alto valor percebido.</p>
   </div>
 
   <div class="market-cards fi d1">
     <div class="market-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg>
       <div class="market-card-val">277%</div>
-      <div class="market-card-lbl">Crescimento do Pilates no Brasil</div>
-    </div>
-    <div class="market-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="9 7 17 7 17 15"/></svg>
-      <div class="market-card-val">13,5%</div>
-      <div class="market-card-lbl">Crescimento do setor<br> de franquias em 2024</div>
-    </div>
-    <div class="market-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
-      <div class="market-card-val">US$9 tri</div>
-      <div class="market-card-lbl">Mercado global de<br> bem-estar</div>
+      <div class="market-card-lbl">de crescimento da prática de Pilates no Brasil entre 2019 e 2024</div>
     </div>
     <div class="market-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 12 7 12 10 5 14 19 17 12 21 12"/></svg>
       <div class="market-card-val">2º lugar</div>
-      <div class="market-card-lbl">Atividade física mais praticada no Brasil</div>
+      <div class="market-card-lbl">entre as atividades físicas mais praticadas no país</div>
+    </div>
+    <div class="market-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      <div class="market-card-val">R$ 273 bi</div>
+      <div class="market-card-lbl">faturados pelo franchising brasileiro em 2024</div>
+    </div>
+    <div class="market-card">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+      <div class="market-card-val">US$ 9 tri</div>
+      <div class="market-card-lbl">é a projeção do mercado global de bem-estar</div>
     </div>
   </div>
 
-  <p class="market-sources fi d2">Fontes: ABF, Portal do Franchising, WebRun, FitFeed, Nord Investimentos</p>
+  <p class="market-sources fi d2">Fontes: ABF, Portal do Franchising, Webrun e FitFeed.</p>
   <div style="text-align:center;"><a href="#formulario-franquia" class="market-cta">Aproveitar Essa Oportunidade</a></div>
 </section>
 
-<!-- MODELO -->
-<section id="modelo">
-  <div class="modelo-intro">
-    <div class="fi">
-      <p class="section-label">O Modelo</p>
-      <h2 class="section-headline">Um negócio completo,<br/><em>do zero ao lucro.</em></h2>
-    </div>
-    <p class="body-text fi d1" style="padding-bottom:8px;">Ao abrir uma franquia VOLL Pilates Studios, você não recebe apenas equipamentos. Você recebe um modelo validado em mais de 250 unidades, com suporte completo, tecnologia integrada e a força de uma marca global.</p>
-  </div>
-  <div class="modelo-grid">
-    <div class="mcard2 fi"><span class="mcard2-num">01</span><h3>Comece a operar com os melhores equipamentos do mercado</h3><p>Você recebe Cadillac, Reformer, Step Chair e Ladder Barrel — sem dor de cabeça com fornecedores. Pronto para gerar receita desde o primeiro dia.</p><span class="mcard2-tag">Infraestrutura</span></div>
-    <div class="mcard2 fi d1"><span class="mcard2-num">02</span><h3>Seu espaço projetado para atrair e fidelizar alunos</h3><p>Projeto arquitetônico exclusivo VOLL — funcional, premium e padronizado para espaços a partir de 40m². Ambiente que o aluno entra e já confia na marca.</p><span class="mcard2-tag">Espaço</span></div>
-    <div class="mcard2 fi d2"><span class="mcard2-num">03</span><h3>A presença da sua unidade com estratégia aprovada!</h3><p>Site, app, mídias sociais e campanhas mensais estratégicas entregues. A VOLL se posiciona no mercado e você ganha respaldo para atrair seus alunos!</p><span class="mcard2-tag">Marketing</span></div>
-    <div class="mcard2 fi"><span class="mcard2-num">04</span><h3>Gestão completa na palma da mão</h3><p>Plataforma exclusiva com agendamento, CRM, relatórios financeiros e comunicação com toda a rede. Mais tempo para o que importa: crescer.</p><span class="mcard2-tag">Tecnologia</span></div>
-    <div class="mcard2 fi d1"><span class="mcard2-num">05</span><h3>Bolsa 100% — você forma sua equipe sem custo</h3><p>Bolsa integral no curso de formação em Pilates para você e seus instrutores. Treinamentos contínuos em gestão, marketing e vendas incluídos.</p><span class="mcard2-tag">Educação</span></div>
-    <div class="mcard2 fi d2"><span class="mcard2-num">06</span><h3>Previsibilidade desde o início!</h3><p>A estrutura de royalties mais previsível do mercado de franquias de bem-estar. Você sabe exatamente o que paga todo mês.</p><span class="mcard2-tag">Financeiro</span></div>
-  </div>
-</section>
-
-
-<!-- PARA QUEM + PERFIL -->
+<!-- SEÇÃO 04 · PARA QUEM É -->
 <section id="diferenciais">
   <div class="para-quem-head fi">
-    <h2>Para Quem é a Franquia VOLL Pilates Studios?</h2>
-    <p>Para quem deseja empreender em um dos mercados que mais crescem no Brasil: saúde, bem-estar e qualidade de vida.</p>
+    <h2>Um negócio para quem pensa como empresário</h2>
+    <p>A franquia VOLL Pilates Studios foi estruturada para empreendedores e investidores. A execução técnica fica com a equipe de instrutores. O papel do franqueado é conduzir o negócio.</p>
   </div>
 
-  <div class="para-quem-grid fi d2">
-    <div class="para-quem-card">
-      <div class="para-quem-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/><polyline points="9 12 11 14 15 10"/></svg></div>
-      <div><h3>Modelo Testado e Validado</h3><p>Em diversas regiões do Brasil e fora dele, com resultados comprovados em mais de 250 unidades.</p></div>
-    </div>
-    <div class="para-quem-card">
-      <div class="para-quem-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg></div>
-      <div><h3>Baixo Investimento, Alto Retorno</h3><p>Agilidade no retorno com investimento facilitado e formas de pagamento flexíveis. Payback em 8-12 meses.</p></div>
-    </div>
-    <div class="para-quem-card">
-      <div class="para-quem-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21h6M12 17v4M8 3h8l1 3a5 5 0 0 1-10 0l1-3z"/></svg></div>
-      <div><h3>Know-how e Credibilidade</h3><p>O respaldo do maior grupo de Pilates da América Latina com 16 anos de experiência e marca reconhecida.</p></div>
-    </div>
-    <div class="para-quem-card">
-      <div class="para-quem-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09zM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2zM9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/></svg></div>
-      <div><h3>Suporte Completo</h3><p>Treinamentos constantes, estratégias de gestão e marketing que aceleram seu crescimento.</p></div>
-    </div>
-  </div>
-
-  <div class="perfil-head fi">
-    <h2>Perfil que Buscamos</h2>
-    <p>Escolha o modelo que se encaixa no seu estilo de vida</p>
+  <div class="para-quem-highlight fi d1">
+    <h3>Não é necessário ser fisioterapeuta ou profissional de educação física.</h3>
+    <p>O requisito é <b>perfil empreendedor</b> e disposição para seguir um <b>modelo comprovado</b>.</p>
   </div>
 
   <div class="perfil-grid fi d1">
     <div class="perfil-card op">
       <div class="perfil-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
       <h3>Sócio Operador</h3>
-      <p>Perfil ideal para quem deseja estar à frente da operação e atuar diretamente na gestão do Studio.</p>
+      <p>Para quem quer liderar a unidade no dia a dia.</p>
       <ul class="perfil-list">
-        <li>Participa ativamente do dia a dia</li>
-        <li>Foco em gestão, vendas e relacionamento</li>
-        <li>Acompanha equipe, metas e resultados</li>
-        <li>Crescimento escalável com dedicação direta</li>
+        <li>Atuação direta em gestão, vendas e relacionamento com alunos</li>
+        <li>Liderança de equipe e acompanhamento de metas</li>
+        <li>Crescimento sustentado pela dedicação à operação</li>
       </ul>
     </div>
     <div class="perfil-card inv">
       <div class="perfil-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg></div>
       <h3>Sócio Investidor</h3>
-      <p>Perfil ideal para quem deseja investir em um modelo validado, com gestão estruturada.</p>
+      <p>Para quem busca diversificar patrimônio com um ativo estruturado.</p>
       <ul class="perfil-list">
-        <li>Atua de forma estratégica, não operacional</li>
-        <li>Pode contar com gestor contratado</li>
-        <li>Foco em indicadores e performance financeira</li>
-        <li>Expansão via múltiplas unidades</li>
+        <li>Atuação estratégica, com gestor contratado na operação</li>
+        <li>Acompanhamento por indicadores e performance financeira</li>
+        <li>Expansão por meio de múltiplas unidades</li>
       </ul>
     </div>
   </div>
 
-  <a href="#formulario-franquia" class="perfil-cta">Descobrir Se Minha Cidade Está Disponível</a>
+  <a href="#formulario-franquia" class="perfil-cta">Descobrir Qual Perfil Combina Comigo</a>
 </section>
 
-<!-- COMPARATIVO -->
+<!-- SEÇÃO 05 · ESTRUTURA DE IMPLANTAÇÃO -->
 <section id="comparativo">
   <div class="rec-head fi">
-    <h2>O Que Você Recebe ao Abrir Seu Studio</h2>
-    <p>Você recebe um Kit completo de aparelhos, um Layout arquitetônico exclusivo e uma equipe estratégica que vai acompanhar você e sua unidade sempre com o objetivo de fazer com que faturamento seja sempre alto!</p>
+    <h2>Tudo o que sua operação precisa para começar</h2>
+    <p>Você receberá 100% da estrutura de equipamentos, projeto arquitetônico exclusivo e kit de boas-vindas, com um time da franqueadora guiando cada etapa da sua trajetória.</p>
   </div>
 
   <div class="rec-grid fi d1">
     <div class="rec-card">
-      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
-      <h3>Investimento Facilitado</h3>
-      <p>Equipamentos e acessórios com formas de pagamento facilitadas.</p>
-    </div>
-    <div class="rec-card">
       <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
-      <h3>Equipamentos Completos</h3>
-      <p>Kit completo de aparelhos para abrir seu Studio com qualidade VOLL.</p>
-    </div>
-    <div class="rec-card">
-      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg></div>
-      <h3>Escalabilidade</h3>
-      <p>Amplie sua rede com incentivos exclusivos e condições diferenciadas.</p>
-    </div>
-    <div class="rec-card">
-      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8v18l-18-8v-2z"/><path d="M11 15v4a2 2 0 0 1-4 0v-3"/></svg></div>
-      <h3>Campanhas de Vendas Prontas</h3>
-      <p>Equipe estratégica desenha campanhas mensais e anuais para sua unidade.</p>
+      <h3>Estrutura completa de aparelhos</h3>
+      <p>Cadillac, Reformer, Step Chair, Ladder Barrel e Prancha de Molas com fabricação Equipilates, acompanhados de acessórios profissionais.</p>
     </div>
     <div class="rec-card">
       <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 1 0 10 10c0-1.66-1.34-3-3-3h-2a2 2 0 0 1-2-2 2 2 0 0 0-2-2 4 4 0 0 1-1-3z"/></svg></div>
-      <h3>Projeto Arquitetônico</h3>
-      <p>Padronização atraente e funcional para espaços a partir de 40m².</p>
-    </div>
-    <div class="rec-card">
-      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-      <h3>Plataforma do Franqueado</h3>
-      <p>Materiais exclusivos, do marketing à gestão de negócios.</p>
-    </div>
-    <div class="rec-card">
-      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg></div>
-      <h3>Marketing 2.0</h3>
-      <p>Site, sistema, mídia social e App prontos para turbinar seu Studio.</p>
+      <h3>Projeto arquitetônico</h3>
+      <p>Layout desenvolvido para unir estética, conforto e funcionalidade dentro dos padrões visuais da VOLL Pilates Studios.</p>
     </div>
     <div class="rec-card">
       <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.66 3 3 6 3s6-1.34 6-3v-5"/></svg></div>
-      <h3>Treinamentos Avançados</h3>
-      <p>Vantagens exclusivas em formação de instrutores de Pilates.</p>
+      <h3>Capacitação</h3>
+      <p>Bolsa para o curso de formação em Pilates, treinamentos contínuos em gestão, marketing e vendas sem custo adicional.</p>
     </div>
     <div class="rec-card">
       <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><polyline points="8.21 13.89 7 22 12 19 17 22 15.79 13.88"/></svg></div>
-      <h3>Direitos da Marca</h3>
-      <p>Seja reconhecido com uso da marca VOLL Pilates Studios como Franqueado.</p>
+      <h3>Marca e ponto comercial</h3>
+      <p>Licença de uso da marca VOLL Pilates Studios e apoio técnico na escolha e estruturação do ponto.</p>
     </div>
     <div class="rec-card">
-      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-      <h3>Fature Muito!</h3>
-      <p>Fature com alunos e com a revenda de cursos e produtos do grupo VOLL.</p>
+      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div>
+      <h3>Base contábil e jurídica</h3>
+      <p>Orientação inicial para constituir a empresa com segurança desde o primeiro dia.</p>
+    </div>
+  </div>
+
+  <div class="sec-cta-wrap"><a href="#formulario-franquia" class="perfil-cta">Quero Estruturar Meu Studio</a></div>
+</section>
+
+<!-- SEÇÃO 06 · SUPORTE CONTÍNUO -->
+<section id="modelo">
+  <div class="sec-head fi">
+    <h2>O suporte continua <em>depois da inauguração</em></h2>
+    <p>A abertura marca o início do acompanhamento. Gestão, comercial e marketing seguem lado a lado com o franqueado, em rotinas definidas e com metas claras.</p>
+  </div>
+
+  <div class="sup-grid fi d1">
+    <div class="sup-card">
+      <h3>Gestão</h3>
+      <ul><li>Acompanhamento semanal no primeiro mês</li><li>Reunião mensal de performance e plano estratégico de metas</li><li>Direcionamento em processos, estrutura de atendimento e plataformas de gestão</li></ul>
+    </div>
+    <div class="sup-card">
+      <h3>Comercial</h3>
+      <ul><li>Mentorias de vendas e gestão</li><li>Campanhas comerciais estruturadas</li><li>Orientação para captação de alunos e realização de eventos na unidade</li></ul>
+    </div>
+    <div class="sup-card">
+      <h3>Marketing</h3>
+      <ul><li>Plataforma exclusiva com materiais e treinamentos</li><li>Apoio na construção de presença digital e offline do seu studio</li><li>Kit de artes personalizadas mensais e criação contínua de peças padronizadas</li></ul>
+    </div>
+  </div>
+
+  <div class="clara-card fi d2">
+    <span class="clara-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.8L20 10.7l-6.1 1.9L12 18.5l-1.9-5.9L4 10.7l6.1-1.9z"/><path d="M19 17l.7 2.1L22 20l-2.3.9L19 23l-.7-2.1L16 20l2.3-.9z"/></svg></span>
+    <div><span class="clara-tag">Tecnologia</span><b>CLARA, a inteligência artificial VOLL</b><span>IA desenvolvida exclusivamente para Studios de Pilates, disponível para a operação da unidade.</span></div>
+  </div>
+
+  <div class="sec-cta-wrap"><a href="#formulario-franquia" class="perfil-cta">Conhecer o Suporte na Prática</a></div>
+</section>
+
+<!-- SEÇÃO 07 · FONTES DE RECEITA -->
+<section id="receitas">
+  <div class="sec-head fi">
+    <h2>Mais de uma fonte de receita na mesma unidade</h2>
+  </div>
+
+  <div class="rec-grid rec-grid-4 fi d1">
+    <div class="rec-card">
+      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h3>Mensalidades de alunos</h3>
+      <p>Receita principal com royalties fixos: o studio permanece com 100% do valor pago pelos novos alunos.</p>
+    </div>
+    <div class="rec-card">
+      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></svg></div>
+      <h3>Wellhub e TotalPass</h3>
+      <p>Com agenda otimizada, cerca de 100 check-ins por mês para potencializar seu faturamento.</p>
+    </div>
+    <div class="rec-card">
+      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.66 3 3 6 3s6-1.34 6-3v-5"/></svg></div>
+      <h3>Representação de Cursos VOLL</h3>
+      <p>Comissões de 10% nas vendas de cursos presenciais e 20% nos cursos online.</p>
+    </div>
+    <div class="rec-card">
+      <div class="rec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2"/></svg></div>
+      <h3>Plataforma VOLL+ Oportunidades</h3>
+      <p>Acesso a novas oportunidades exclusivas de negócio geradas dentro do ecossistema VOLL.</p>
     </div>
   </div>
 </section>
 
-<!-- ENTENDA O NEGÓCIO -->
+<!-- SEÇÃO 08 · O NEGÓCIO EM NÚMEROS -->
 <section id="jornada">
   <div class="neg-head fi">
-    <h2>Entenda o Negócio</h2>
-    <p>Investimento inicial baixo e facilitado, incluindo todos equipamentos necessários para começar o negócio e faturar!</p>
+    <h2>O negócio em números</h2>
   </div>
-  <div class="neg-grid fi d1">
+  <div class="neg-grid neg-grid-3 fi d1">
     <div class="neg-card">
-      <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-      <div class="neg-val">8-12</div>
-      <div class="neg-lbl">meses de Payback</div>
+      <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="neg-val">10 a 18</div>
+      <div class="neg-lbl">meses de payback</div>
     </div>
     <div class="neg-card">
       <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="15 7 21 7 21 13"/></svg></div>
-      <div class="neg-val">2-4</div>
-      <div class="neg-lbl">meses para Breakeven</div>
-    </div>
-    <div class="neg-card">
-      <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
-      <div class="neg-val">50%</div>
-      <div class="neg-lbl">Conversão média de clientes</div>
+      <div class="neg-val">até 6</div>
+      <div class="neg-lbl">meses para atingir o breakeven</div>
     </div>
     <div class="neg-card">
       <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 2.5 21.5 8.5 8.5 21.5 2.5 15.5z"/><line x1="7" y1="10" x2="9" y2="12"/><line x1="10" y1="7" x2="13" y2="10"/><line x1="13" y1="4" x2="17" y2="8"/></svg></div>
-      <div class="neg-val">40m²</div>
-      <div class="neg-lbl">Tamanho mínimo</div>
+      <div class="neg-val">40 m²</div>
+      <div class="neg-lbl">de área mínima</div>
     </div>
   </div>
 
-  <div class="desconto-card fi d3">
-    <span class="desconto-badge">Condição Especial</span>
-    <h3>Investimento Inicial Baixo e Facilitado</h3>
-    <p class="desconto-sub">Aparelhos · Acessórios · Layout · Capacitação · Assessoria completa</p>
-    <div class="desconto-headline">Consulte Desconto Especial</div>
-    <div class="desconto-chips">
-      <span class="desconto-chip">À vista no contrato</span>
-      <span class="desconto-chip">12x sem juros no cartão</span>
-      <span class="desconto-chip">70% + 12x boleto</span>
+  <div class="neg-sim fi d2">
+    <h3>Simulação de faturamento</h3>
+    <p>Base: 4 a 6 alunos por horário, 10 horas de atendimento por dia, frequência de 3 vezes por semana.</p>
+    <div class="neg-grid neg-grid-2">
+    <div class="neg-card">
+      <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div class="neg-val">R$ 25 mil</div>
+      <div class="neg-lbl">faturamento mensal estimado com o plano de R$ 299</div>
     </div>
-    <a href="#formulario-franquia" class="desconto-cta">Quero Abrir Minha Franquia</a>
+    <div class="neg-card">
+      <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div class="neg-val">R$ 38 mil</div>
+      <div class="neg-lbl">faturamento mensal estimado com o plano de R$ 394</div>
+    </div>
+    </div>
   </div>
 </section>
 
@@ -1254,83 +1371,188 @@
   <div class="calc-inner">
     <div class="calc-header fi">
       <p class="calc-eyebrow">Simulador de Retorno</p>
-      <h2>Simule o Potencial do Seu Studio</h2>
-      <p class="calc-sub">Ajuste os parâmetros e veja uma estimativa do retorno financeiro baseada nas premissas reais da rede VOLL Pilates Studios.</p>
+      <h2>Simule o potencial do seu Studio</h2>
+      <p class="calc-sub">Ajuste os parâmetros e veja uma estimativa a partir da mesma base: 4 a 6 alunos por horário, 10 horas por dia, 3 vezes por semana.</p>
     </div>
 
     <div class="calc-grid fi d1">
       <div class="calc-inputs">
         <div class="calc-field">
-          <div class="calc-field-head"><label for="sl-alunos">Número de alunos ativos</label><span class="calc-field-val"><b id="vl-alunos">150</b></span></div>
-          <input type="range" class="calc-slider" id="sl-alunos" min="100" max="180" value="150" step="1"/>
-          <div class="calc-field-range"><span>100</span><span>180</span></div>
+          <div class="calc-field-head"><label for="sl-alunos">Número de alunos ativos</label><span class="calc-field-val"><b id="vl-alunos">83</b></span></div>
+          <input type="range" class="calc-slider" id="sl-alunos" min="67" max="96" value="83" step="1"/>
+          <div class="calc-field-range"><span>67</span><span>96</span></div>
         </div>
         <div class="calc-field">
-          <div class="calc-field-head"><label for="sl-ticket">Mensalidade média por aluno</label><span class="calc-field-val">R$ <b id="vl-ticket">269</b></span></div>
-          <input type="range" class="calc-slider" id="sl-ticket" min="199" max="350" value="269" step="1"/>
-          <div class="calc-field-range"><span>R$199</span><span>R$350</span></div>
+          <div class="calc-field-head"><label for="sl-ticket">Mensalidade média por aluno</label><span class="calc-field-val">R$ <b id="vl-ticket">299</b></span></div>
+          <input type="range" class="calc-slider" id="sl-ticket" min="299" max="394" value="299" step="1"/>
+          <div class="calc-field-range"><span>R$299</span><span>R$394</span></div>
         </div>
         <div class="calc-field">
-          <div class="calc-field-head"><label for="sl-plat">Alunos Wellhub + TotalPass</label><span class="calc-field-val"><b id="vl-plat">30</b></span></div>
-          <input type="range" class="calc-slider" id="sl-plat" min="10" max="50" value="30" step="1"/>
-          <div class="calc-field-range"><span>10</span><span>50</span></div>
+          <div class="calc-field-head"><label for="sl-plat">Alunos Wellhub + TotalPass</label><span class="calc-field-val"><b id="vl-plat">0</b></span></div>
+          <input type="range" class="calc-slider" id="sl-plat" min="0" max="30" value="0" step="1"/>
+          <div class="calc-field-range"><span>0</span><span>30</span></div>
         </div>
-        <p class="calc-note">Os alunos de plataformas estão incluídos no total de alunos ativos.</p>
+        <p class="calc-note">Os alunos de plataformas são somados aos alunos ativos: a receita deles entra além das mensalidades.</p>
       </div>
 
       <div class="calc-results">
         <div class="calc-result-item">
           <div class="calc-result-lbl">Receita bruta estimada / mês</div>
-          <div class="calc-result-val">R$ <span id="res-receita">37.056</span></div>
+          <div class="calc-result-val">R$ <span id="res-receita">24.817</span></div>
         </div>
         <div class="calc-result-item">
           <div class="calc-result-lbl">Resultado líquido estimado / mês</div>
-          <div class="calc-result-val hi">R$ <span id="res-lucro">11.117</span></div>
+          <div class="calc-result-val hi">R$ <span id="res-lucro">7.445</span></div>
         </div>
         <div class="calc-result-item">
           <div class="calc-result-lbl">Retorno estimado do investimento</div>
-          <div class="calc-result-val hi"><span id="res-payback">10</span> <small>meses</small></div>
+          <div class="calc-result-val hi"><span id="res-payback">13</span> <small>meses</small></div>
         </div>
         <div class="calc-invest">Investimento estimado <b>a partir de R$ 80.000</b></div>
       </div>
     </div>
 
-    <p class="calc-disclaimer">Simulação baseada em parâmetros financeiros e operacionais de referência da rede VOLL Pilates Studios. O resultado considera despesas operacionais, pró-labore e período de ramp-up da unidade. Os resultados reais podem variar conforme localização, ocupação, ticket médio, gestão e condições do mercado local. Não constitui garantia de faturamento, lucratividade ou prazo de retorno do investimento.</p>
+    <div class="royalties-bar fi d2">
+      <div class="royalties-bar-left"><b>Royalties fixos</b><span>R$ 1.990/mês em valor integral · R$ 990/mês com a Gamificação VOLL*</span></div>
+      <div class="royalties-bar-right">*Consulte as regras de aplicabilidade.</div>
+    </div>
+
+    <p class="calc-disclaimer">Valores estimados. Os resultados variam conforme praça, ponto comercial, composição da equipe e gestão da unidade.</p>
   </div>
+</section>
+
+<!-- SEÇÃO 09 · JORNADA DO FRANQUEADO -->
+<section id="etapas">
+  <div class="sec-head fi">
+    <h2>Da primeira conversa à inauguração</h2>
+    <p>Um processo estruturado, conduzido por equipes especializadas em cada fase.</p>
+  </div>
+  <ol class="etapas-list fi d1">
+    <li class="etapa"><span class="etapa-num">01</span><p>Apresentação do modelo e análise de perfil</p></li>
+    <li class="etapa"><span class="etapa-num">02</span><p>Entrega da Circular de Oferta de Franquia (COF) e 10 dias para análise</p></li>
+    <li class="etapa"><span class="etapa-num">03</span><p>Assinatura do contrato</p></li>
+    <li class="etapa"><span class="etapa-num">04</span><p>Reunião de boas-vindas</p></li>
+    <li class="etapa"><span class="etapa-num">05</span><p>Escolha e estruturação do ponto</p></li>
+    <li class="etapa"><span class="etapa-num">06</span><p>Envio dos equipamentos e materiais</p></li>
+    <li class="etapa"><span class="etapa-num">07</span><p>Alinhamento com as equipes de Gestão e Marketing</p></li>
+    <li class="etapa"><span class="etapa-num">08</span><p>Inauguração</p></li>
+    <li class="etapa"><span class="etapa-num">09</span><p>Assessoria de gestão e marketing no pós-inauguração</p></li>
+  </ol>
 </section>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials">
-  <p class="section-label" style="color:var(--green-on-dark)">Quem já faz parte</p>
-  <h2 class="section-headline fi" style="color:white; max-width:500px;">A voz de quem<br/><em style="color:var(--green-on-dark)">transformou sua vida.</em></h2>
+  <p class="section-label">Quem já faz parte</p>
+  <h2 class="section-headline fi" style="max-width:500px;">Quem já opera<br/><em>um Studio VOLL.</em></h2>
   <div class="tcarousel" id="tcarousel" aria-roledescription="carrossel">
     <div class="tviewport">
       <div class="ttrack" id="ttrack">
         <div class="tslide" id="t-slide-0" role="tabpanel" aria-labelledby="t-tab-0" aria-hidden="false">
           <div class="tgrid">
-            <div class="tcard"><p class="tquote">Em 11 meses recuperei todo o investimento. Não era do setor de saúde — era do varejo. A VOLL entrega o que promete: suporte real e um modelo que funciona.</p><div class="tauthor"><div class="tavatar">C</div><div><div class="tname">Carolina Mendes</div><div class="trole">Franqueada — São Paulo, SP · 3 unidades · ROI em 11 meses</div></div></div></div>
-            <div class="tcard"><p class="tquote">Breakeven no 3º mês. Eu era empreendedor do setor de alimentação, sem nenhuma experiência em Pilates. O modelo da VOLL é plug and play de verdade.</p><div class="tauthor"><div class="tavatar">R</div><div><div class="tname">Roberto Alves</div><div class="trole">Franqueado — Curitiba, PR · 2 unidades · breakeven no 3º mês</div></div></div></div>
-            <div class="tcard"><p class="tquote">Entrei como investidora. Hoje tenho uma unidade lucrando acima da média da rede e já assinei contrato para a segunda. A marca VOLL vende sozinha.</p><div class="tauthor"><div class="tavatar">P</div><div><div class="tname">Patricia Souza</div><div class="trole">Franqueada — Belo Horizonte, MG · expansão em 2025</div></div></div></div>
+            <div class="tcard"><div class="tquote"><p>Meu nome é Maria Paula e inaugurei meu estúdio há quase dois meses, no bairro Jardim São Paulo, Zona Norte de São Paulo.</p><p>Antes de tomar a minha decisão, pesquisei e avaliei diversas franquias disponíveis no mercado. Hoje, considero que fiz uma escolha muito assertiva.</p><p>Entre os principais motivos, destaco o modelo de negócio bem estruturado, o atendimento impecável da equipe, a prontidão e o suporte oferecidos durante todo o processo, além de uma identidade visual que transmite saúde, movimento e bem-estar.</p><p>Outro grande diferencial é a qualidade dos materiais e das ferramentas disponibilizadas, que contribuem para o nosso desenvolvimento como empreendedores e auxiliam na gestão e na evolução constante do negócio.</p><p>Estou muito feliz com a minha escolha e confiante nos próximos passos dessa jornada.</p></div><div class="tauthor"><img class="tavatar" src="images/depoimentos/jardim-sao-paulo.webp" alt="Fachada da unidade VOLL Pilates Studios Jardim São Paulo Tibiri" width="56" height="56" loading="lazy" decoding="async"/><div><div class="tname">Maria Paula</div><div class="trole">VOLL Pilates Studios Jardim São Paulo Tibiri</div></div></div></div>
+            <div class="tcard"><div class="tquote"><p>A gente já conhecia a VOLL pelos cursos de formação e sempre confiou muito na marca pela excelência do trabalho. Eu e minha esposa somos fisioterapeutas e, quando decidimos começar o nosso negócio, acreditamos que a VOLL seria a melhor escolha, tanto pela confiança que já tínhamos na marca quanto pelo valor atrativo para iniciar o empreendimento.</p><p>Temos uma ótima experiência com o suporte das equipes de marketing, gestão e gerenciamento do estúdio. Isso facilitou muito o nosso caminho e ajudou para que a nossa primeira unidade alcançasse o resultado que esperávamos.</p><p>Nem tudo foi fácil. Tivemos dificuldades ao longo do processo, mas conseguimos superar cada fase e, com o apoio da franquia, das mentorias e da proximidade da equipe, conseguimos abrir a nossa segunda unidade.</p><p>Continuamos a acreditar no processo, para que a nossa segunda unidade tenha o mesmo sucesso da primeira.</p></div><div class="tauthor"><img class="tavatar" src="images/depoimentos/sorocaba.webp" alt="Fachada da unidade VOLL Pilates Studios Sorocaba Vila Gabriel" width="56" height="56" loading="lazy" decoding="async"/><div><div class="tname">Vinicius de Souza Cosmos</div><div class="trole">VOLL Pilates Studios Sorocaba Vila Gabriel</div></div></div></div>
+            <div class="tcard"><div class="tquote"><p>Escolhi a VOLL porque, desde o início, me identifiquei com a proposta da marca e com a forma de trabalhar.</p><p>Tem sido uma experiência de muito aprendizado, desafios e também muitas conquistas. O mais gratificante é ver a unidade crescendo, acompanhar a evolução dos alunos e perceber que estamos construindo algo que realmente faz diferença na vida das pessoas.</p><p>Para quem pensa em ser franqueado, eu diria que é importante entrar de coração aberto, com disposição para aprender e se dedicar, e estar presente no dia a dia do negócio.</p><p>Ter uma marca já conhecida e um método bem definido também ajuda bastante nesse processo. &#128154;</p></div><div class="tauthor"><img class="tavatar" src="images/depoimentos/granja-julieta.webp" alt="Fachada da unidade VOLL Pilates Studios São Paulo Granja Julieta" width="56" height="56" loading="lazy" decoding="async"/><div><div class="tname">Gisele Pompeu</div><div class="trole">VOLL Pilates Studios São Paulo Granja Julieta</div></div></div></div>
           </div>
         </div>
         <div class="tslide" id="t-slide-1" role="tabpanel" aria-labelledby="t-tab-1" aria-hidden="true">
-          <div class="tgrid">
-            <div class="tcard"><p class="tquote">Saí do marketing para empreender com propósito. O onboarding da VOLL é impecável — em 70 dias estávamos com agenda cheia e equipe alinhada à metodologia.</p><div class="tauthor"><div class="tavatar">F</div><div><div class="tname">Fernanda Costa</div><div class="trole">Franqueada — Florianópolis, SC · 1 unidade · inauguração em 60 dias</div></div></div></div>
-            <div class="tcard"><p class="tquote">Trabalhei 15 anos em multinacional. Queria um negócio próprio sem reinventar processos. A VOLL entrega playbook, indicadores e uma comunidade que acelera qualquer decisão.</p><div class="tauthor"><div class="tavatar">M</div><div><div class="tname">Marcos Oliveira</div><div class="trole">Franqueado — Rio de Janeiro, RJ · 1 unidade · ex-C-level</div></div></div></div>
-            <div class="tcard"><p class="tquote">Como fisioterapeuta, escolhi a VOLL pelo rigor técnico e pela formação da equipe. Hoje atendemos em fila de espera — a reputação da marca abre portas na cidade.</p><div class="tauthor"><div class="tavatar">J</div><div><div class="tname">Juliana Araújo</div><div class="trole">Franqueada — Salvador, BA · 1 unidade · lista de espera ativa</div></div></div></div>
+          <div class="tgrid tgrid-2">
+            <div class="tcard"><div class="tquote"><p>Minha experiência como franqueada da VOLL tem sido bastante positiva. No primeiro ano, senti que algumas coisas ainda estavam um pouco desconexas, o que chegou a me gerar um certo descontentamento.</p><p>Porém, de lá para cá, percebo uma evolução muito grande. A entrada de novos profissionais na equipe, além de outras mudanças que vêm acontecendo, trouxe uma proximidade e um suporte que, particularmente, eu sentia muita falta em alguns momentos do meu primeiro Studio. Hoje me sinto mais apoiada e percebo um movimento genuíno da VOLL em ouvir os franqueados, entender nossas necessidades e buscar melhorias e, principalmente, o crescimento da nossa unidade.</p><p>Atualmente tenho 3 unidades e trago certo contentamento em ser franqueada da VOLL. Não me arrependo de ter aberto meus studios por franquia; inclusive, penso sim em continuar expandindo e ter novas unidades da VOLL no futuro.</p><p>Gosto muito de fazer parte da VOLL, de novos projetos, da expansão e estou feliz com meus studios.</p></div><div class="tauthor"><img class="tavatar" src="images/depoimentos/vila-prudente.webp" alt="Fachada da unidade VOLL Pilates Studios Vila Prudente Ibitirama" width="56" height="56" loading="lazy" decoding="async"/><div><div class="tname">Letícia</div><div class="trole">VOLL Pilates Studios Vila Prudente Ibitirama</div></div></div></div>
+            <div class="tcard"><div class="tquote"><p>Hoje tenho 1 ano e 9 meses de Studio. Escolhemos a VOLL por ser uma referência no mercado. A grande vantagem de estar presente na franquia é que temos um suporte total de gestão e marketing, muito importante no início do negócio e nas expansões e capacitações.</p><p>Temos também constantes mentorias e acompanhamento de gestão, facilitando o trabalho do dia a dia.</p></div><div class="tauthor"><img class="tavatar" src="images/depoimentos/juiz-de-fora.webp" alt="Fachada da unidade VOLL Pilates Studios Juiz de Fora" width="56" height="56" loading="lazy" decoding="async"/><div><div class="tname">Abilio</div><div class="trole">VOLL Pilates Studios Juiz de Fora</div></div></div></div>
           </div>
         </div>
       </div>
     </div>
     <div class="tbullets" role="tablist" aria-label="Navegar entre grupos de depoimentos">
       <button type="button" class="tbullet" role="tab" aria-selected="true" aria-controls="t-slide-0" id="t-tab-0" data-tindex="0" aria-label="Depoimentos 1 a 3"></button>
-      <button type="button" class="tbullet" role="tab" aria-selected="false" aria-controls="t-slide-1" id="t-tab-1" data-tindex="1" aria-label="Depoimentos 4 a 6"></button>
+      <button type="button" class="tbullet" role="tab" aria-selected="false" aria-controls="t-slide-1" id="t-tab-1" data-tindex="1" aria-label="Depoimentos 4 e 5"></button>
     </div>
   </div>
 </section>
 
 
-<!-- CALCULADORA ROI -->
+<!-- GALERIA DE STUDIOS -->
+<section id="galeria">
+  <div class="gal-head fi">
+    <h2>Studios VOLL pelo Brasil</h2>
+    <p>Conheça o padrão das unidades que já fazem parte da rede.</p>
+  </div>
+  <div class="gal-grid fi d1">
+    <figure class="gal-card">
+      <div class="gal-view">
+        <div class="gal-track" tabindex="0" role="group" aria-label="Fotos da unidade VOLL Pilates Studios Jardim São Paulo Tibiri">
+          <img src="images/studios/jardim-sao-paulo/02.webp" alt="VOLL Pilates Studios Jardim São Paulo Tibiri — foto 1 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/jardim-sao-paulo/04.webp" alt="VOLL Pilates Studios Jardim São Paulo Tibiri — foto 2 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/jardim-sao-paulo/05.webp" alt="VOLL Pilates Studios Jardim São Paulo Tibiri — foto 3 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/jardim-sao-paulo/06.webp" alt="VOLL Pilates Studios Jardim São Paulo Tibiri — foto 4 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/jardim-sao-paulo/07.webp" alt="VOLL Pilates Studios Jardim São Paulo Tibiri — foto 5 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+        </div>
+        <button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button>
+        <button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>
+      </div>
+      <figcaption>VOLL Pilates Studios Jardim São Paulo Tibiri</figcaption>
+    </figure>
+    <figure class="gal-card">
+      <div class="gal-view">
+        <div class="gal-track" tabindex="0" role="group" aria-label="Fotos da unidade VOLL Pilates Studios Sorocaba Vila Gabriel">
+          <img src="images/studios/sorocaba/01.webp" alt="VOLL Pilates Studios Sorocaba Vila Gabriel — foto 1 de 7" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/sorocaba/02.webp" alt="VOLL Pilates Studios Sorocaba Vila Gabriel — foto 2 de 7" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/sorocaba/03.webp" alt="VOLL Pilates Studios Sorocaba Vila Gabriel — foto 3 de 7" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/sorocaba/07.webp" alt="VOLL Pilates Studios Sorocaba Vila Gabriel — foto 4 de 7" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/sorocaba/04.webp" alt="VOLL Pilates Studios Sorocaba Vila Gabriel — foto 5 de 7" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/sorocaba/05.webp" alt="VOLL Pilates Studios Sorocaba Vila Gabriel — foto 6 de 7" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/sorocaba/06.webp" alt="VOLL Pilates Studios Sorocaba Vila Gabriel — foto 7 de 7" width="800" height="600" loading="lazy" decoding="async"/>
+        </div>
+        <button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button>
+        <button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>
+      </div>
+      <figcaption>VOLL Pilates Studios Sorocaba Vila Gabriel</figcaption>
+    </figure>
+    <figure class="gal-card">
+      <div class="gal-view">
+        <div class="gal-track" tabindex="0" role="group" aria-label="Fotos da unidade VOLL Pilates Studios São Paulo Granja Julieta">
+          <img src="images/studios/granja-julieta/01.webp" alt="VOLL Pilates Studios São Paulo Granja Julieta — foto 1 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/granja-julieta/02.webp" alt="VOLL Pilates Studios São Paulo Granja Julieta — foto 2 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/granja-julieta/03.webp" alt="VOLL Pilates Studios São Paulo Granja Julieta — foto 3 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/granja-julieta/04.webp" alt="VOLL Pilates Studios São Paulo Granja Julieta — foto 4 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/granja-julieta/05.webp" alt="VOLL Pilates Studios São Paulo Granja Julieta — foto 5 de 5" width="800" height="600" loading="lazy" decoding="async"/>
+        </div>
+        <button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button>
+        <button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>
+      </div>
+      <figcaption>VOLL Pilates Studios São Paulo Granja Julieta</figcaption>
+    </figure>
+    <figure class="gal-card">
+      <div class="gal-view">
+        <div class="gal-track" tabindex="0" role="group" aria-label="Fotos da unidade VOLL Pilates Studios Vila Prudente Ibitirama">
+          <img src="images/studios/vila-prudente/03.webp" alt="VOLL Pilates Studios Vila Prudente Ibitirama — foto 1 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/vila-prudente/02.webp" alt="VOLL Pilates Studios Vila Prudente Ibitirama — foto 2 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/vila-prudente/07.webp" alt="VOLL Pilates Studios Vila Prudente Ibitirama — foto 3 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/vila-prudente/06.webp" alt="VOLL Pilates Studios Vila Prudente Ibitirama — foto 4 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/vila-prudente/04.webp" alt="VOLL Pilates Studios Vila Prudente Ibitirama — foto 5 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/vila-prudente/01.webp" alt="VOLL Pilates Studios Vila Prudente Ibitirama — foto 6 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+        </div>
+        <button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button>
+        <button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>
+      </div>
+      <figcaption>VOLL Pilates Studios Vila Prudente Ibitirama</figcaption>
+    </figure>
+    <figure class="gal-card">
+      <div class="gal-view">
+        <div class="gal-track" tabindex="0" role="group" aria-label="Fotos da unidade VOLL Pilates Studios Juiz de Fora">
+          <img src="images/studios/juiz-de-fora/07.webp" alt="VOLL Pilates Studios Juiz de Fora — foto 1 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/juiz-de-fora/03.webp" alt="VOLL Pilates Studios Juiz de Fora — foto 2 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/juiz-de-fora/02.webp" alt="VOLL Pilates Studios Juiz de Fora — foto 3 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/juiz-de-fora/01.webp" alt="VOLL Pilates Studios Juiz de Fora — foto 4 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/juiz-de-fora/04.webp" alt="VOLL Pilates Studios Juiz de Fora — foto 5 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+          <img src="images/studios/juiz-de-fora/05.webp" alt="VOLL Pilates Studios Juiz de Fora — foto 6 de 6" width="800" height="600" loading="lazy" decoding="async"/>
+        </div>
+        <button type="button" class="gal-nav gal-prev" aria-label="Foto anterior">‹</button>
+        <button type="button" class="gal-nav gal-next" aria-label="Próxima foto">›</button>
+      </div>
+      <figcaption>VOLL Pilates Studios Juiz de Fora</figcaption>
+    </figure>
+  </div>
+</section>
 
 <!-- BADGES -->
 <section class="badges-section">
@@ -1340,7 +1562,7 @@
       <div class="badge-txt"><span>Associada à</span><strong>ABF — Franquia verificada</strong></div>
     </div>
     <div class="badge-card">
-      <div class="badge-num">16</div>
+      <div class="badge-num">17</div>
       <div class="badge-txt"><span>Anos de</span><strong>liderança de mercado</strong></div>
     </div>
     <div class="badge-card">
@@ -1348,7 +1570,7 @@
       <div class="badge-txt"><span>Maior rede de Pilates</span><strong>da América Latina</strong></div>
     </div>
     <div class="badge-card">
-      <div class="badge-num">229</div>
+      <div class="badge-num">+230</div>
       <div class="badge-txt"><span>Unidades em todos</span><strong>os estados do Brasil</strong></div>
     </div>
   </div>
@@ -1359,13 +1581,14 @@
   <div class="cta-inner">
     <div class="cta-left fi">
       <span class="cta-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Poucas vagas disponíveis na sua região</span>
-      <h2>Garanta Sua Região com <em>Exclusividade</em></h2>
-      <p>Trabalhamos com territórios protegidos. Cada franqueado tem exclusividade na sua área de atuação. Preencha o formulário e descubra se sua cidade ainda está disponível.</p>
+      <h2>Seu Studio VOLL começa com <em>uma conversa</em></h2>
+      <p>Fale com um consultor de expansão, consulte a disponibilidade da sua região e receba a apresentação completa do modelo.</p>
       <ul class="cta-features">
         <li><span class="cta-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Exclusividade territorial garantida</li>
         <li><span class="cta-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/></svg></span>Seus dados estão protegidos e seguros</li>
         <li><span class="cta-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>Retorno em até 24 horas úteis</li>
       </ul>
+      <p class="cta-micro">Seus dados são tratados conforme a LGPD e utilizados apenas para contato sobre a franquia.</p>
     </div>
 
     <div class="cta-right fi d1" id="formulario-franquia">
@@ -1373,7 +1596,7 @@
       <iframe
         src="https://portal.grupovoll.com.br/?publicFormId=c2470d8c-bbb7-4e41-934b-5ce9243b5381&amp;embed=true"
         width="100%"
-        height="840px"
+        scrolling="no"
         frameborder="0"
         style="border:0;max-width:100%;"
         title="Formulário de Franquias - Portal VOLL"
@@ -1397,7 +1620,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q"><span class="faq-q-text">Qual é o investimento total e como é o retorno?</span><div class="faq-icon">+</div></button>
-        <div class="faq-a"><p>O investimento inicial inclui taxa de franquia, equipamentos completos (Cadillac, Reformer, Step Chair, Ladder Barrel), projeto arquitetônico e capital de giro. O modelo prevê breakeven entre 2 e 4 meses e payback entre 8 e 12 meses — use nossa calculadora acima para simular com os seus números.</p><p>Nossa equipe apresenta uma proposta financeira detalhada e personalizada durante o processo de qualificação, sem pressão e sem compromisso.</p></div>
+        <div class="faq-a"><p>O investimento inicial inclui taxa de franquia, equipamentos completos (Cadillac, Reformer, Step Chair, Ladder Barrel), projeto arquitetônico e capital de giro. O modelo prevê breakeven em até 6 meses e payback entre 10 e 18 meses — use nossa calculadora acima para simular com os seus números.</p><p>Nossa equipe apresenta uma proposta financeira detalhada e personalizada durante o processo de qualificação, sem pressão e sem compromisso.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-q"><span class="faq-q-text">Qual é o valor da taxa de franquia?</span><div class="faq-icon">+</div></button>
@@ -1431,15 +1654,14 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">
-    <img src="images/logo-voll-colorido-negativo.webp" alt="VOLL Pilates Studios" width="144" height="45" loading="lazy" decoding="async"/>
+    <img src="images/logo-voll-colorido-positivo.webp" alt="VOLL Pilates Studios" width="144" height="45" loading="lazy" decoding="async"/>
   </div>
   <ul class="footer-links">
-    <li><a href="#">Sobre a VOLL</a></li>
-    <li><a href="#">Franquias</a></li>
-    <li><a href="#">Metodologia</a></li>
-    <li><a href="#">Contato</a></li>
+    <li><a href="https://wa.me/5519989373873" target="_blank" rel="noopener noreferrer">Fale com um consultor</a></li>
+    <li><a href="https://www.instagram.com/vollpilatesgroup/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a href="https://www.youtube.com/@CanalVOLLTV" target="_blank" rel="noopener noreferrer">YouTube</a></li>
   </ul>
-  <p class="footer-copy">© 2026 Grupo VOLL · VOLL Pilates Studios. Todos os direitos reservados.</p>
+  <p class="footer-copy">© 2026 Grupo VOLL. Todos os direitos reservados.</p>
 </footer>
 
 <script defer>
@@ -1451,20 +1673,24 @@
   const PLAT_VALOR = 19.90;
   const MARGEM = 0.30;
   const RAMPUP_BUFFER = 2;
+  const PAYBACK_MIN = 10;
+  const PAYBACK_MAX = 18;
 
   function calc() {
     const alunos = +document.getElementById('sl-alunos').value;
     const ticket = +document.getElementById('sl-ticket').value;
-    const plat   = Math.min(+document.getElementById('sl-plat').value, alunos);
+    const plat   = +document.getElementById('sl-plat').value;
 
     document.getElementById('vl-alunos').textContent = alunos;
     document.getElementById('vl-ticket').textContent = fmt(ticket);
     document.getElementById('vl-plat').textContent   = plat;
 
-    const particulares = alunos - plat;
-    const receita = particulares * ticket + plat * PLAT_VALOR * PLAT_AULAS;
+    // Wellhub/TotalPass soma à receita das mensalidades, sem substituir alunos ativos
+    const receitaMensalidades = alunos * ticket;
+    const receitaPlataformas  = plat * PLAT_VALOR * PLAT_AULAS;
+    const receita = receitaMensalidades + receitaPlataformas;
     const lucro   = receita * MARGEM;
-    const payback = lucro > 0 ? Math.ceil(INVEST / lucro) + RAMPUP_BUFFER : '—';
+    const payback = lucro > 0 ? Math.min(PAYBACK_MAX, Math.max(PAYBACK_MIN, Math.ceil(INVEST / lucro) + RAMPUP_BUFFER)) : '—';
 
     document.getElementById('res-receita').textContent = fmt(receita);
     document.getElementById('res-lucro').textContent   = fmt(lucro);
@@ -1500,6 +1726,20 @@ document.querySelectorAll('.fi').forEach(el => {
   const r = el.getBoundingClientRect();
   if (r.top < window.innerHeight) el.classList.add('v');
   else io.observe(el);
+});
+
+/* ── GALERIA DE STUDIOS ── */
+document.querySelectorAll('.gal-view').forEach(view => {
+  const track = view.querySelector('.gal-track');
+  const move = dir => {
+    const max = track.scrollWidth - track.clientWidth;
+    let x = track.scrollLeft + dir * track.clientWidth;
+    if (x > max + 4) x = 0;
+    else if (x < -4) x = max;
+    track.scrollTo({ left: x });
+  };
+  view.querySelector('.gal-prev').addEventListener('click', () => move(-1));
+  view.querySelector('.gal-next').addEventListener('click', () => move(1));
 });
 
 /* ── TESTIMONIALS CAROUSEL ── */
@@ -1559,46 +1799,9 @@ document.querySelectorAll('.fi').forEach(el => {
 })();
 </script>
 
-<script type="module">
-/* Chat Typebot carregado sob demanda. A bolha só exibe a mensagem de prévia
-   após 5s, então adiar o download até a página carregar (ou até a primeira
-   interação) não muda nada para o visitante e tira o módulo do CDN do
-   caminho crítico. */
-(function () {
-  var carregado = false;
-  var eventos = ['scroll', 'pointerdown', 'keydown', 'touchstart'];
-
-  function iniciar() {
-    if (carregado) return;
-    carregado = true;
-    eventos.forEach(function (e) { window.removeEventListener(e, iniciar); });
-
-    import('https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3.4/dist/web.js')
-      .then(function (mod) {
-        (mod.default || mod).initBubble({
-          typebot: "franquias-agente-sdr",
-          apiHost: "https://iavoll.exerciciosdepilates.com.br",
-          className: "someMN",
-          previewMessage: {
-            message: "Olá, tem alguma dúvida?",
-            autoShowDelay: 5000,
-            avatarUrl:
-              "https://vollpilates.com.br/wp-content/uploads/2024/07/curso_de_pilates_lgo_voll_pilates.webp",
-          },
-          theme: {
-            button: { backgroundColor: "#00615a" },
-            chatWindow: { backgroundColor: "#00615a" },
-          },
-        });
-      });
-  }
-
-  eventos.forEach(function (e) {
-    window.addEventListener(e, iniciar, { once: true, passive: true });
-  });
-  if (document.readyState === 'complete') setTimeout(iniciar, 1500);
-  else window.addEventListener('load', function () { setTimeout(iniciar, 1500); });
-})();
-</script>
+<!-- Botão flutuante — WhatsApp da consultora de franquias -->
+<a class="wa-float" href="https://wa.me/5519989373873" target="_blank" rel="noopener noreferrer" aria-label="Fale agora com o nosso consultor de franquias pelo WhatsApp" title="Fale agora com o nosso consultor de franquias">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C8.85 3 3 8.83 3 16c0 2.29.6 4.52 1.75 6.49L3 29l6.7-1.75A13.06 13.06 0 0 0 16.04 29C23.2 29 29 23.17 29 16S23.2 3 16.04 3zm0 23.8c-1.97 0-3.9-.53-5.58-1.52l-.4-.24-3.97 1.04 1.06-3.86-.26-.4A10.74 10.74 0 0 1 5.2 16c0-5.95 4.86-10.8 10.84-10.8 5.97 0 10.83 4.85 10.83 10.8s-4.86 10.8-10.83 10.8zm5.94-8.08c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.73.16-.22.33-.84 1.06-1.03 1.28-.19.22-.38.24-.7.08-.33-.16-1.38-.5-2.62-1.6-.97-.86-1.62-1.92-1.81-2.25-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.41-.3.33-1.14 1.11-1.14 2.71s1.17 3.14 1.33 3.36c.16.22 2.3 3.5 5.57 4.91.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.14-.3-.22-.62-.38z"/></svg>
+</a>
 </body>
 </html>
