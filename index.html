@@ -299,7 +299,7 @@
     .hero-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; font-size: 14px; color: rgba(255,255,255,0.88); }
     .hero-chips span { display: inline-flex; align-items: center; gap: 8px; }
     .hero-chips svg { width: 16px; height: 16px; color: var(--green-on-dark); flex: none; }
-    .hero-mini-stat .hero-abf { width: 28px; height: 28px; display: block; }
+    .hero-chips .hero-abf { width: 36px; height: 36px; display: block; }
     .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; justify-content: center; }
     .hero-actions .btn-primary { border-radius: 999px; padding: 18px 40px; font-size: 13px; }
     .hero-actions .btn-outline {
@@ -1019,6 +1019,23 @@
     footer .footer-links a { color: var(--black); }
     footer .footer-links a:hover { color: var(--on-green-accent); }
     footer .footer-copy { color: var(--on-green-muted); }
+
+    /* Hero e menu em verde claro: a foto fica ao fundo sob um véu verde, com texto marrom */
+    #hero { background: var(--green-light-bg); }
+    .hero-video-overlay { background: linear-gradient(90deg, rgba(162,212,191,0.94) 0%, rgba(162,212,191,0.88) 45%, rgba(162,212,191,0.80) 100%); }
+    #hero h1 { color: var(--black); }
+    #hero h1 em { color: var(--on-green-accent); }
+    #hero .hero-body { color: var(--on-green-muted); }
+    #hero .hero-chips { color: var(--black); }
+    #hero .hero-chips svg { color: var(--on-green-accent); }
+    #hero .hero-badge { background: rgba(255,255,255,0.6); }
+    #hero .hero-actions .btn-outline { border-color: var(--black); color: var(--black); }
+    #hero .hero-actions .btn-outline:hover { background: var(--black); color: #fff; }
+    #hero .hero-scroll { color: rgba(47,23,15,0.6); }
+    nav::before { background: linear-gradient(180deg, rgba(162,212,191,0.92) 0%, rgba(162,212,191,0.55) 70%, rgba(162,212,191,0) 100%); }
+    nav.scrolled { background: rgba(162,212,191,0.96); border-bottom-color: rgba(47,23,15,0.14); }
+    .nav-links a { color: var(--black); }
+    .nav-links a:hover { color: var(--on-green-accent); }
   </style>
   <template id="__bundler_thumbnail" data-bg-color="#4c3329">
     <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
@@ -1061,7 +1078,7 @@
   <!-- Logo oficial VOLL Pilates Studios — assinatura colorida (símbolo verde original
        preservado), com o wordmark em creme para leitura sobre fundo escuro. -->
   <a href="#hero" class="nav-logo" aria-label="VOLL Pilates Studios — início">
-    <img src="images/logo-voll-colorido-negativo.webp" alt="VOLL Pilates Studios" width="163" height="51"/>
+    <img src="images/logo-voll-colorido-positivo.webp" alt="VOLL Pilates Studios" width="163" height="51"/>
   </a>
   <ul class="nav-links">
     <li><a href="#authority">A VOLL</a></li>
@@ -1091,19 +1108,13 @@
 
     <div class="hero-chips">
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2"/></svg>Não exige formação na área</span>
-      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/></svg>Associado ABF</span>
+      <span><img class="hero-abf" src="images/logo-abf-hero.webp" alt="Associado ABF" width="36" height="36"/></span>
       <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Implantação estruturada em 90 dias</span>
     </div>
 
     <div class="hero-actions">
       <a href="#formulario-franquia" class="btn-primary">Quero Abrir Meu Studio</a>
       <a href="#diferenciais" class="btn-outline">Conhecer o Modelo →</a>
-    </div>
-
-    <div class="hero-mini-stats">
-      <div class="hero-mini-stat">Associado <img class="hero-abf" src="images/logo-abf-hero.webp" alt="ABF" width="28" height="28"/></div>
-      <div class="hero-mini-stat">Payback médio<b>10-18 meses</b></div>
-      <div class="hero-mini-stat">Faturamento até<b>R$38k/mês</b></div>
     </div>
   </div>
 
@@ -1347,23 +1358,6 @@
       <div class="neg-lbl">de área mínima</div>
     </div>
   </div>
-
-  <div class="neg-sim fi d2">
-    <h3>Simulação de faturamento</h3>
-    <p>Base: 4 a 6 alunos por horário, 10 horas de atendimento por dia, frequência de 3 vezes por semana.</p>
-    <div class="neg-grid neg-grid-2">
-    <div class="neg-card">
-      <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-      <div class="neg-val">R$ 25 mil</div>
-      <div class="neg-lbl">faturamento mensal estimado com o plano de R$ 299</div>
-    </div>
-    <div class="neg-card">
-      <div class="neg-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-      <div class="neg-val">R$ 38 mil</div>
-      <div class="neg-lbl">faturamento mensal estimado com o plano de R$ 394</div>
-    </div>
-    </div>
-  </div>
 </section>
 
 <!-- SIMULADOR DE RETORNO -->
@@ -1372,7 +1366,7 @@
     <div class="calc-header fi">
       <p class="calc-eyebrow">Simulador de Retorno</p>
       <h2>Simule o potencial do seu Studio</h2>
-      <p class="calc-sub">Ajuste os parâmetros e veja uma estimativa a partir da mesma base: 4 a 6 alunos por horário, 10 horas por dia, 3 vezes por semana.</p>
+      <p class="calc-sub">Ajuste os parâmetros e veja uma estimativa do retorno do seu Studio.</p>
     </div>
 
     <div class="calc-grid fi d1">
@@ -1410,11 +1404,6 @@
         </div>
         <div class="calc-invest">Investimento estimado <b>a partir de R$ 80.000</b></div>
       </div>
-    </div>
-
-    <div class="royalties-bar fi d2">
-      <div class="royalties-bar-left"><b>Royalties fixos</b><span>R$ 1.990/mês em valor integral · R$ 990/mês com a Gamificação VOLL*</span></div>
-      <div class="royalties-bar-right">*Consulte as regras de aplicabilidade.</div>
     </div>
 
     <p class="calc-disclaimer">Valores estimados. Os resultados variam conforme praça, ponto comercial, composição da equipe e gestão da unidade.</p>
@@ -1567,7 +1556,7 @@
     </div>
     <div class="badge-card">
       <div class="badge-num">#1</div>
-      <div class="badge-txt"><span>Maior rede de Pilates</span><strong>da América Latina</strong></div>
+      <div class="badge-txt"><span>Maior grupo de Pilates</span><strong>da América Latina</strong></div>
     </div>
     <div class="badge-card">
       <div class="badge-num">+230</div>
@@ -1580,11 +1569,9 @@
 <section id="cta">
   <div class="cta-inner">
     <div class="cta-left fi">
-      <span class="cta-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Poucas vagas disponíveis na sua região</span>
       <h2>Seu Studio VOLL começa com <em>uma conversa</em></h2>
       <p>Fale com um consultor de expansão, consulte a disponibilidade da sua região e receba a apresentação completa do modelo.</p>
       <ul class="cta-features">
-        <li><span class="cta-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Exclusividade territorial garantida</li>
         <li><span class="cta-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/></svg></span>Seus dados estão protegidos e seguros</li>
         <li><span class="cta-feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>Retorno em até 24 horas úteis</li>
       </ul>
